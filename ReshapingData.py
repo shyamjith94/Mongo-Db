@@ -4,7 +4,7 @@ import pprint
 from bson.json_util import dumps
 from bson.json_util import loads
 
-collection = connect_to_atlas()
+collection = connect_to_atlas(collection="initial_movies")
 pip_line = [
     {
         '$limit': 100

@@ -7,5 +7,5 @@ def connect_to_atlas(username="analytics", password="salony7808335456", db="mfli
                          "?retryWrites=true&w"
                          "=majority")
     db = client['mfilx']
-    collection = db["initial_movies"]
+    collection = db[collection]
     return collection
